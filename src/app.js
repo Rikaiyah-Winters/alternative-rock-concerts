@@ -24,8 +24,13 @@ search.addWidgets([
     attribute: 'name',
   }),
 
+  instantsearch.widgets.refinementList({
+    container: '#location-list',
+    attribute: 'location',
+  }),
+
   instantsearch.widgets.configure({
-    hitsPerPage: 8
+    hitsPerPage: 16
   }),
 
   instantsearch.widgets.hits({
